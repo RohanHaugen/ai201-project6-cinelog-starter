@@ -15,8 +15,9 @@ Changed add_to_watchlist to check for deduplications, using add_to_collection fr
 Created a watchlist and added a film to it twice, noting that the second time produced a 409 error.
 ## Comment 3 — Missing test
 **What I did:**
+Created a test modeled after test_add_to_collection_nonexistent_film_raises and test_add_to_collection_duplicate_raises to test whether duplicate entries raised an error. 
 **How I verified:**
-
+Ran the test and it passed.
 ## Comment 4 — Default visibility
 **My position:**
 **Reasoning:**
