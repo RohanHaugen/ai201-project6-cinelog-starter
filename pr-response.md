@@ -7,11 +7,12 @@
 **What I did:**
 Renamed save_to_watchlist in watchlist_service.py to add_to_watchlist. Changed implementations of save_to_watchlist in watchlist.py to add_to_watchlist.
 **How I verified:**
-
+I used the find-all-references in order to ensure that save_to_watchlist no longer appeared.
 ## Comment 2 — Deduplication
 **What I did:**
+Changed add_to_watchlist to check for deduplications, using add_to_collection from collection_service as a reference. Added an error class to watchlist_service for duplicate entries on watchlist.
 **How I verified:**
-
+Created a watchlist and added a film to it twice, noting that the second time produced a 409 error.
 ## Comment 3 — Missing test
 **What I did:**
 **How I verified:**

@@ -1,10 +1,9 @@
 """app.py — CineLog Flask application factory"""
 
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
+from extensions import db
 import os
 
-db = SQLAlchemy()
 
 
 def create_app(config=None):
